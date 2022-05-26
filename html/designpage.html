@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta name="author" content="Xintong Qi 56198895"/>
+      <meta name="description" content="City Sushi Design Page"/>
+      <meta charset="UTF-8">
+
+      <style>
+      body > section :nth-child(even){
+        background-color: rgba(43, 190, 23, 0.2);
+      }
+      button {
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        margin: 10px;
+      }
+      .css {
+        display: none;
+      }
+      .js {
+        display: none;
+      }
+      .js h3,#p1,#p2 {
+        background-color: white;
+      }
+      #p1,#p2 {
+        background-color: rgba(43, 190, 23, 0.2);
+      }
+      </style>
+    
+      <title>City Sushi Design Page</title>
+  </head>
+  
+  <body>
+    
+    <header id="header">
+      <img src="../image/Sushi-64.png" alt="Sushi" title="Sushi">
+      <h1>City Sushi Design Page</h1>
+      <h3>Xintong Qi
+          56198895
+      </h3>
+    </header>
+
+    <button onclick="showCss();">css design explanation</button>
+    <button onclick="hideCss();">hide css explanation</button>
+    <button onclick="showJs();">js design explanation</button>
+    <button onclick="hideJs();">hide js explanation</button>
+
+    <section class="citation">
+      <h3>
+      background image used :zen from wikimedia
+      https://commons.wikimedia.org/wiki/Category:Zen_gardens#/media/File:Balboa_Park_Japanese_Garden_4.JPG
+      </h3>
+    </section>
+
+
+    <section class="css">
+      <h3>
+        Use of positioning schemes:
+      </h3>
+      <p>
+        I used 4 positionings in total.They are:
+        <br>
+        Fixed
+        <br>
+        1) header 2) footer 3)navigation bar in homepage
+        <br>
+        Absolute
+        <br>
+        4) animation in orderpage
+      </p>
+    </section>
+
+
+    <section class="css">
+      <h3>
+        Use of CSS3 techniques:
+      </h3>
+      <p>
+        1) basic: round corner
+        <br>
+        almost all borders, tablinks, buttons
+        <br>
+        2) transition
+        <br>
+        menu tablinks in orderpage, menu add buttons in orderpage
+        <br>
+        3) animation
+        <br>
+        two logo animations in orderpage
+      </p>
+    </section>
+
+
+    <section class="css">
+        <h3>
+          How styles are grouped into style sheets/embedded sheets
+        </h3>
+        <p>
+          I used 5 style sheets in total.They are:
+          <br>
+          1) reset.css    remove the default settings of the browsers.
+          <br>
+          2) universal.css    set the universal common scene: background-image, font-family, header, footer, links, tablinks...
+          <br>
+          3) homepage.css   apply on homepage and divided into different sections: information,promotion,reservation...
+          <br>
+          4) orderpage.css    apply on orderpage and divided into different sections: menu,table...
+          <br>
+          5) orderprint.css   apply on the print page 
+          <br>
+          I used 1 embedded style sheet:
+          <br>
+          The one in design page.
+          <br>
+          Didn't use inline styles.
+        </p>
+      </section>
+  
+    <section class="js">
+      <h3>Javascript</h3>
+      <p id="p1">by Javascript: homepage.js line No.13 (show the random promotion onload)<br>
+                        homepage.js line No.20 (display the other promotions in a loop)<br>
+                        orderpage.js line No.36 (show the sushi menu onload)<br>
+                        orderpage.js line No.260 (display current time onload)<br>
+                      </p>
+      <p id="p2">in HTML: homepage.html line No.133 (to check the form)<br>
+                  orderpage.html line No.33-35 (to set up click and show)<br>
+                  orderpagee.html line No.43 49 55 61 69 75 81 89 (to set up add buttons)<br>
+                  orderpage.html line No.157 (to set up undo) <br>
+                  orderpage.html line No.158 (show current time when submit a form)<br>
+                  orderpage.html line No.160 (print the page onclick)<br>
+                  designpage.html line No.39-42</p>
+    </section>
+
+    <footer> 
+      <p>@CityU 2019 sourses of images and text from <span><a href="https://commons.wikimedia.org/wiki/Main_Page" target="_blank" title="wikimedia commons">Wikimedia Commons</a>  </span>and Courtesy of Icon pack by <span> <a href="https://icons8.com/" target="_blank" title="icons8"> Icons8</a></span>;design by <span><a href="designpage.html" target="blank" title="Design Page">CS2204</a></span></p>
+    </footer>
+
+    <script>
+    function showCss(){
+      document.querySelectorAll(".css")[0].style.display = "block";
+      document.querySelectorAll(".css")[1].style.display = "block";
+      document.querySelectorAll(".css")[2].style.display = "block";
+    }
+
+    function hideCss(){
+      document.querySelectorAll(".css")[0].style.display = "none";
+      document.querySelectorAll(".css")[1].style.display = "none";
+      document.querySelectorAll(".css")[2].style.display = "none";
+    }
+
+    function showJs(){
+      document.querySelectorAll(".js")[0].style.display = "block";
+    }
+
+    function hideJs(){
+      document.querySelectorAll(".js")[0].style.display = "none";
+    }
+    </script>
+  
+  </body>
+</html>

@@ -1,0 +1,12 @@
+/*City Sushi Reset Sheet*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+
+/* * {
+    border: 1px solid black
+}*/

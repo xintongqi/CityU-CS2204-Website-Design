@@ -1,0 +1,53 @@
+/* print*/
+*{
+    border: 1px black;
+}
+.hide{
+    display: none;
+}
+html{
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body > header{
+    display: block;
+    width: 80%;
+    height: 10%;
+    background-color:transparent;
+    position: fixed;
+    left: 500px;
+}
+header img{
+    float: left;
+}
+#print{
+    margin-top: 100px;
+    display: block;
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+}
+#print header{
+    width:800px;
+    margin: auto;
+}
+table{
+    margin: auto;
+}
+table th,tfoot {
+    text-align: left;
+    font-weight: bold;
+}
+thead th:nth-child(even){
+    text-align: right;
+    font-weight: bold;
+}
+tbody td:nth-child(even){
+    text-align: right;
+    font-weight: bold;
+}
+tfoot td:nth-child(even){
+    text-align: right;
+    font-weight: bold;
+}

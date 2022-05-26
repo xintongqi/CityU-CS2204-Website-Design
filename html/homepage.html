@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Xintong Qi 56198895"/>
+        <meta name="keywords" content="City Sushi"/>
+        <meta name="description" content="City Sushi Home Page"/>
+        <meta http-equiv="refresh" content="3600"/>
+
+        <title>City Sushi Home Page</title>
+
+        <link rel="stylesheet" href="../css/reset.css" type="text/css" media="all">
+        <link rel="stylesheet" href="../css/universal.css" type="text/css" media="all">
+        <link rel="stylesheet" href="../css/homepage.css" type="text/css" media="all">
+    </head>
+
+   
+    <body>
+        <!--header-->
+        <header>
+            <img src="../image/Sushi-64.png" alt="Sushi" title="Sushi" id="headersushi">
+            <h1>City Sushi Home Page</h1>
+        </header>
+        
+        <!--navigation bar-->
+        <nav>
+            <ul>
+                <li><a href="#Address" title="Address">Address</a></li>
+                <li><a href="#Tel" title="Tel">Tel</a></li>
+                <li><a href="#BusinessHours" title="Budiness Hours">Business Hours</a></li>
+                <li><a href="#SignatureDishes" title="Signature Dishes">Signature Dishes</a></li>
+                <li><a href="#Location" title="Location">Location</a></li>
+                <li><a href="#Promotion" title="Promotion">Promotion</a></li>
+                <li><a href="#Reservation" title="Reservation">Reservation</a></li>
+            </ul>
+        </nav>
+    
+        <!--section 1:address,tel,business hours.signature dishes,location-->
+        <section id="Information">
+            <header>
+                <h3>Basic Information</h3>
+            </header>
+           
+            <dl>
+                <dt id="Address">Address</dt>
+                <dd>
+                    <p>83 Tat Chee Avenue</p>
+                    <p>Kowloon</p>
+                    <p>Hong Kong</p>
+                </dd>
+
+                <dt id="Tel">Tel</dt>
+                <dd>
+                    <p>3442-7788</p>
+                </dd>
+
+                <dt id="BusinessHours">Business Hours</dt>
+                <dd>
+                    <p>12:00-3:00 p.m.</p>
+                    <p>6:30-11:30 p.m.</p>
+                    <p>Last Order 10:30 p.m.</p>
+                </dd>
+        
+                <dt id="SignatureDishes">Signature Dishes</dt>
+                <dd>
+                    <p>Salmon Sushi</p>
+                    <p>Cheese Sushi</p>
+                    <p>Hand Roll</p>
+                    <p>Tuna Sushi</p>
+                    <p>Ice Cream</p>
+                    <p>Japanese Pancake</p>
+                </dd>
+
+                <dt id="Location">Location</dt>
+                <dd>
+                    <img src="../image/location.jpg" alt="Location" title="Image Showing The Location" id="location">
+                    <br>
+                    <a href="orderpage.html" target="_blank"><img src="../image/Order.png" title="Order Page" alt="Order Page" id="orderpagelink"></a> 
+                </dd>
+            </dl>
+        </section>
+        
+        <!--section 2:promotion-->
+        <section id="Promotion">
+            <header>
+                <h3>Check Out Our Promotion!</h3>
+            </header>
+           
+            <dl>
+                <dt></dt>
+                <dd>
+                    <video autoplay muted title="Video of a barbecue/cake making" id="myVideo">
+                        your browser does not support this video format.
+                    </video>
+                </dd>
+            </dl>
+        </section>
+        
+        <!--section 3:reservation form-->
+        <section id="Reservation">
+            <header>
+                <h3>Make Your Reservation Now!</h3>
+            </header>
+           
+            <dl>
+                <dt>Reservation</dt>
+                <dd>
+                    <form action="#" method="GET" id="form" name="myForm">
+                        <fieldset>
+                
+                            <legend>Reservation</legend>
+                
+                            <label for="Date">Date:</label>
+                            <br>					
+			                <input type="text" id="Date" name="Date" placeholder="dd/mm/yyyy" />
+                            <br>
+
+                            <label for="Time">Time:</label>
+                            <br>
+			                <select id="Time" name="Time">
+				            <option value="12:00-3:00pm" selected="selected" >12:00-3:00pm</option>
+				            <option value="6:30-11:30pm">6:30-11:30pm</option>
+			                </select>
+                            <br>
+
+                            <label for="Number">Number of Guests:</label>
+                            <br>
+			                <input type="number" min="1" max="10" id="Number" name="number" />
+                            <br>
+                            
+                            <p id="notComp"></p>
+                            
+                            <input type="submit" value="Submit" onclick="return formCheck();" />
+                            <input type="reset" value="Reset" />
+            
+                        </fieldset>
+                    </form>  
+                </dd>
+            </dl>
+        </section>
+
+        <!--footer-->
+        <footer>
+            <p>@CityU 2019 sourses of images and text from <span><a href="https://commons.wikimedia.org/wiki/Main_Page" target="_blank" title="wikimedia commons">Wikimedia Commons</a>  </span>and Courtesy of Icon pack by <span> <a href="https://icons8.com/" target="_blank" title="icons8"> Icons8</a></span>;design by <span><a href="designpage.html" target="blank" title="Design Page">CS2204</a></span></p>
+        </footer>
+
+        <script src="http://courses.cs.cityu.edu.hk/cs2204/cs2204cw3.js"></script>
+        <script src="../js/homepage.js"></script>
+    </body>
+</html>

@@ -1,0 +1,231 @@
+/*screen*/
+body{
+    width: 95%;
+}
+form{
+    margin-top:12%;
+}
+
+/*menu*/
+#Menu{
+    border: 3px solid gray;
+    border-radius: 15px;
+}
+fieldset{
+    border:none;
+}
+#Menu h3{
+    text-align: center;
+    font-size: 2em;
+}
+#Sushi,#Drink,#Dessert {
+    clear:both;
+    display: none;
+}
+.tablinks{
+    display: inline-block;
+    float: left;
+    width: 33.333%;
+    font-weight: bold;
+}
+#Sushi div,#Drink div,#Dessert div{
+    display: inline-block;
+    width: 31%;
+    padding: 1%;
+}
+
+#Sushi div:nth-child(even){
+    margin-left: 0.8%;
+    margin-right: 2.2%;
+}
+#Drink div:nth-child(even){
+    margin-left: 0.8%;
+    margin-right: 2.2%;
+}
+#Drink div:nth-child(3) img{
+    height:140px;
+}
+#Drink div:nth-child(3){
+    padding: 2%;
+}
+
+#Menu img{
+    display:inline-block;
+    margin:10px;
+}
+
+/*
+#sushilink:hover~#Sushi{
+    display:block;
+}
+#drinklink:hover~#Drink{
+    display:block;
+}
+#dessertlink:hover~#Dessert{
+    display:block;
+}
+
+#Sushi:hover,#Drink:hover,#Dessert:hover {
+    display:block;
+}
+*/
+
+#Menu div input[type=number]{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 125px;
+    height: 30px;
+    position: relative;
+    bottom:80px;
+}
+#Menu .button{
+    position: relative;
+    display: inline-block;
+    left:153px;
+    bottom: 65px;
+    width: 125px;
+    height: 30px;
+    overflow: visible;
+} 
+#Drink div:nth-child(3) button{
+    position: relative;
+    display: inline-block;
+    left:130px;
+    bottom: 65px;
+    width: 125px;
+    height: 30px;
+    overflow: visible;
+}
+
+/*animation*/
+#animation{
+    width: 100%;
+    position: absolute;
+    top: 97%;
+    bottom:1%;
+    height: 200px;
+}
+@keyframes leftsushi{
+    0% {width:85px; height:85px}
+    25% {width:100px; height:100px}
+    50% {width:150px; height:150px}
+    75% {width:100px; height:100px}
+    100% {width:85px; height:85px}
+}
+
+#leftsushi{
+    position: absolute;
+    left: 1%;
+    width: 85px;
+    height: 85px;
+    animation-name:leftsushi;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 10000;
+    -webkit-animation-iteration-count:10000;
+    -o-animation-iteration-count: 10000;
+}
+@keyframes rightsushi{
+    0% {width:85px; height:85px}
+    25% {width:100px; height:100px}
+    50% {width:150px; height:150px}
+    75% {width:100px; height:100px}
+    100% {width:85px; height:85px}
+}
+
+#rightsushi{
+    position: absolute;
+    right: 5%;
+    width: 85px;
+    height: 85px;
+    animation-name: rightsushi;
+    animation-duration: 4s;
+    -moz-animation-iteration-count: 10000;
+    -webkit-animation-iteration-count: 10000;
+    -o-animation-iteration-count: 10000;
+}
+
+/*table*/
+#print{
+    padding-top:2%;
+    padding-left:2%;
+    padding-right:2%;
+    border: 3px solid gray;
+    border-radius: 15px;
+    width: 70%;
+    margin:auto;
+    margin-top: 2%;
+}
+#print header {
+    text-align: center;
+    background-color: rgb(57, 141, 60);
+    color: white;
+}
+#print header h3{
+    font-size: 200%;
+}
+
+
+table caption{
+    background-color: rgb(57, 141, 60);
+    color: white;
+}
+table,th,td,caption,header{
+    border:1px solid green;
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 5%;
+}
+tbody tr:nth-child(odd){
+    background-color:transparent;
+    color: green;
+}
+
+
+thead th:nth-child(even){
+    text-align: right;
+    font-weight: bold;
+}
+tbody td:nth-child(even){
+    text-align: right;
+    font-weight: bold;
+}
+tfoot td:nth-child(even){
+    text-align: right;
+    font-weight: bold;
+}
+
+
+table th,tfoot {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+table tr td{
+    padding-top:10px;
+    padding-bottom:10px;
+
+}
+
+#input{
+    padding-left: 25%;
+    width:100%;
+}
+input{
+    margin: auto;
+    width: 10%;
+    height: 8%;
+}
+
+table input{
+    margin-left: 25%;
+    margin-right: 30%;
+}
+
+tbody tr:hover{
+    background-color: rgba(0, 240, 12, 0.4);
+}

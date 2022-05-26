@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="City Sushi"/>
+        <meta name="description" content="City Sushi Order Page"/>
+
+        <title>City Sushi Order Page</title>
+
+        <link rel="stylesheet" href="../css/reset.css" type="text/css" media="all">
+        <link rel="stylesheet" href="../css/universal.css" type="text/css" media="all">
+        <link rel="stylesheet" href="../css/orderpageprint.css" type="text/css" media="print">
+        <link rel="stylesheet" href="../css/orderpage.css" type="text/css" media="screen">
+    </head>
+    
+    <body>
+        <!--header-->
+        <header>
+            <img src="../image/Sushi-64.png" alt="Sushi" title="Sushi" id="headersushi">
+            <h1>City Sushi Order Page</h1>
+        </header>
+
+        <form action="#" method="GET">
+       
+        <fieldset class="hide">    
+            <!--section1-->
+            <section id="Menu">
+                <header>
+                    <h3>Menu</h3>
+                </header>
+                
+                
+                    <button class="tablinks" id="sushilink" onclick="return showSushi();"><span>Sushi</span></button>
+                    <button class="tablinks" id="drinklink" onclick="return showDrink();"><span>Drinks</span></button>
+                    <button class="tablinks" id="dessertlink" onclick="return showDessert();"><span>Dessert</span></button>
+                
+            
+                
+                    <div id="Sushi">
+                        <div>
+                            <img src="../image/sushi-1.jpg" alt="sushi-1" title="sushi-1" id="sushi-1p">
+                            <input type="number" name="sushi-1" id="sushi-1" min="1" max="10">
+                            <button class="button" id="sushi-1b" onclick="return getDish(this.id);"><span>Add</span></button>
+                        </div>
+                    
+                        <div>
+                            <img src="../image/sushi-2.jpg" alt="sushi-2" title="sushi-2" id="sushi-2p">
+                            <input type="number" name="sushi-2" id="sushi-2" min="1" max="10">
+                            <button class="button" id="sushi-2b" onclick="return getDish(this.id);"><span>Add</span></button>
+                        </div>
+                    
+                        <div>
+                            <img src="../image/sushi-3.jpg" alt="sushi-3" title="sushi-3" id="sushi-3p">
+                            <input type="number" name="sushi-3" id="sushi-3" min="1" max="10">
+                            <button class="button" id="sushi-3b" onclick="return getDish(this.id);"><span>Add</span></button>
+                        </div>
+                    
+                        <div>
+                            <img src="../image/sushi-4.jpg" alt="sushi-4" title="sushi-4" id="sushi-4p">
+                            <input type="number" name="sushi-4" id="sushi-4" min="1" max="10">
+                            <button class="button" id="sushi-4b" onclick="return getDish(this.id);"><span>Add</span></button>
+                        </div>
+                    </div>
+                    
+                    <div id="Drink">
+                        <div>
+                            <img src="../image/drink-1.jpg" alt="drink-1" title="drink-1" id="drink-1p">
+                            <input type="number" name="drink-1" id="drink-1" min="1" max="10">
+                            <button class="button" id="drink-1b" onclick="return getDish(this.id);"><span>Add</span></button>
+                        </div>
+
+                        <div>
+                            <img src="../image/drink-2.jpg" alt="drink-2" title="drink-2" id="drink-2p">
+                            <input type="number" name="drink-2" id="drink-2" min="1" max="10">
+                            <button class="button" id="drink-2b" onclick="return getDish(this.id);"><span>Add</span></button>
+                        </div>
+                
+                        <div>
+                            <img src="../image/drink-3.jpg" alt="drink-3" title="drink-3" id="drink-3p">
+                            <input type="number" name="drink-3" id="drink-3" min="1" max="10">
+                            <button class="button"  id="drink-3b" onclick="return getDish(this.id);"><span>Add</span></button>
+                        </div>
+                    </div>
+                
+                    <div id="Dessert">
+                        <div>
+                            <img src="../image/dessert-1.jpg" alt="dessert-1" title="dessert-1" id="dessert-1p">
+                            <input type="number" name="dessert-1" id="dessert-1" min="1" max="10">
+                            <button class="button" id="dessert-1b" onclick="return getDish(this.id);"><span>Add</span></button>
+                        </div>
+                    </div>
+                
+
+            </section>
+        </fieldset> 
+        
+
+        <fieldset>    
+            <!--section2-->
+            <section id="print">
+                <header>                
+                    <h3>Ordered Items</h3>
+                    <h4 id="currentTime"> </h4>
+                </header>
+
+                
+                <table id="myTable">
+                    <caption>Table:4-No.of Guests 3</caption>
+                
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+                        <!--
+                        <tr>
+                            <td>Salmon Sushi</td>
+                            <td>4</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Sushi Combo</td>
+                            <td>2</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Tuna Sushi</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <td>Juice</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr>
+                            <td>Lemon Cake</td>
+                            <td>1</td>
+                        </tr>
+                        -->
+                    </tbody>
+                
+                    <tfoot>
+                        <tr>
+                            <td>Total</td>
+                            <td id="totalQty"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <p id="notOrdered"></p>
+
+                <div id="input" class="hide">
+                    <input type="reset" value="Undo" name="reset" onclick="return deleteRow();" class="button"/>
+                    <input type="submit" value="Submit" name="submit" class="button" onclick="return displayTime();"/>
+                    <input type="button" value="Print" name="print" class="button" onclick="window.print();" onkeypress="window.print();" tabindex="14" accesskey="p"/>
+                </div>
+            </section>
+        </fieldset>
+        
+        </form>
+
+        <div id="animation" class="hide">
+            <img src="../image/Sushi-64.png" alt="Sushi" title="Sushi" id="leftsushi">
+            <img src="../image/Sushi-64.png" alt="Sushi" title="Sushi" id="rightsushi">
+        </div>
+    
+
+        <footer class="hide">
+            <p>@CityU 2019 sourses of images and text from <span><a href="https://commons.wikimedia.org/wiki/Main_Page" target="_blank" title="wikimedia commons"> Wikimedia Commons</a> </span>and Courtesy of Icon pack by <span> <a href="https://icons8.com/" target="_blank" title="icons8"> Icons8</a></span>;design by <span><a href="designpage.html" target="blank" title="Design Page">CS2204</a></span></p>
+        </footer>
+
+        <script src="../js/orderpage.js"></script>
+    </body>
+</html>
